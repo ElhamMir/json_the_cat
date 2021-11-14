@@ -19,14 +19,4 @@ const fetchBreedDescription = function(name, callback) {
   });
   
 };
-  
-const name = process.argv[2];
-
-  
-fetchBreedDescription(name, (err, cat) => {
-  if (err) {
-    console.log('Error', err);
-  } else {
-    console.log(cat);
-  }
-});
+module.exports = { fetchBreedDescription };
